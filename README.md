@@ -122,7 +122,8 @@ Windows Api 封装 C++ 库
 	//获取文件时间信息
 	FILETIME CreateTime, AccessTime, ModifyTime;
 	WinLib::FsGetFileTimeInfo(FilePath, CreateTime, AccessTime, ModifyTime);
-——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+———————————————————————————————————————————————————————
+	
 #include "WinLibMm.h"
 	
 	//读取模块资源文件
