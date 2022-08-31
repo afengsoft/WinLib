@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="WinLib">
+      <UniqueIdentifier>{979da7c1-f2ac-4146-abde-9b599ae2163c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WinLib\WinLib">
+      <UniqueIdentifier>{53caabed-4d39-4628-b7e8-df71c1f1a0b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WinLib\WinLib\wow64ext">
+      <UniqueIdentifier>{53bf75cc-fed7-4dea-8a54-431565214a41}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\wow64\wow64ext.cpp">
+      <Filter>WinLib\WinLib\wow64ext</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\WinLibFs.cpp">
+      <Filter>WinLib\WinLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\WinLibMm.cpp">
+      <Filter>WinLib\WinLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\WinLibNet.cpp">
+      <Filter>WinLib\WinLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\WinLibOs.cpp">
+      <Filter>WinLib\WinLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\WinLibPs.cpp">
+      <Filter>WinLib\WinLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\WinLibSe.cpp">
+      <Filter>WinLib\WinLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\WinLibStr.cpp">
+      <Filter>WinLib\WinLib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\WinLibFs.h">
+      <Filter>WinLib\WinLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\WinLib.h">
+      <Filter>WinLib\WinLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\WinLibMm.h">
+      <Filter>WinLib\WinLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\WinLibNet.h">
+      <Filter>WinLib\WinLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\WinLibOs.h">
+      <Filter>WinLib\WinLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\WinLibPs.h">
+      <Filter>WinLib\WinLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\WinLibSe.h">
+      <Filter>WinLib\WinLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\WinLibStr.h">
+      <Filter>WinLib\WinLib</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
