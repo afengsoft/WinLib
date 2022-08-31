@@ -3,6 +3,7 @@ Windows Api Enclosing C++ Library
 Windows Api 封装 C++ 库
 
 #include "WinLibOs.h"
+	
 	//系统是否是X64
 	WinLib::OsIs64()
 
@@ -50,6 +51,7 @@ Windows Api 封装 C++ 库
 	std::cout << "OsVer:" << OsVer << std::endl;
 
 #include "WinLibSe.h"
+	
 	//设置文件所有者
 	WinLib::SeTakeFileOwnership(WinLib::OsCurrentUserName(), _T("d:\\test.exe"));
 
@@ -57,6 +59,7 @@ Windows Api 封装 C++ 库
 	WinLib::SeSetFileAllowAccess(WinLib::OsCurrentUserName(), _T("d:\\test.exe"));
 	
 #include "WinLibFs.h"
+	
 	//获取文件大小
 	tstring FilePath = WinLib::OsGetWindowsDirectory() + _T("\\explorer.exe");
 	DWORD Size = WinLib::FsGetFileSize(FilePath);
@@ -117,6 +120,7 @@ Windows Api 封装 C++ 库
 	WinLib::FsGetFileTimeInfo(FilePath, CreateTime, AccessTime, ModifyTime);
 	
 #include "WinLibMm.h"
+	
 	//读取模块资源文件
 	std::string ResourceData;
 	WinLib::MmReleaseResource(NULL, IDR_TXT1, _T("TXT"), ResourceData);
@@ -141,6 +145,7 @@ Windows Api 封装 C++ 库
 	//}
 
 #include "WinLibNet.h"
+	
 	//Ip获取
 	tcout << _T("GetHostByName:") << WinLib::NetIpToStr(WinLib::NetGetHostByName("www.baidu.com")) << std::endl;
 
@@ -175,6 +180,7 @@ Windows Api 封装 C++ 库
 	WinLib::NetGetAdapterInfos(Adapters);
 
 #include "WinLibStr.h"
+	
 	//wchar 转 std::string 
 	{
 		wchar_t* xxx = (wchar_t*)L"xxx";
@@ -280,6 +286,7 @@ Windows Api 封装 C++ 库
 	tcout << WinLib::StrNtToDosPath(_T("\\Device\\HarddiskVolume2\\Windows\\explore.exe")) << std::endl;
 
 #include "WinLibPs.h"
+	
 	//枚举进程Pid
 	{
 		std::vector<DWORD> Pids;
