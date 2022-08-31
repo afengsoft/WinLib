@@ -2,7 +2,8 @@
 Windows Api Enclosing C++ Library
 	
 Windows Api 封装 C++ 库
-——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+———————————————————————————————————————————————————————
+	
 #include "WinLibOs.h"
 	
 	//系统是否是X64
@@ -50,7 +51,8 @@ Windows Api 封装 C++ 库
 	}
 	//...
 	std::cout << "OsVer:" << OsVer << std::endl;
-——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+———————————————————————————————————————————————————————
+	
 #include "WinLibSe.h"
 	
 	//设置文件所有者
@@ -58,7 +60,8 @@ Windows Api 封装 C++ 库
 
 	//获取文件权限
 	WinLib::SeSetFileAllowAccess(WinLib::OsCurrentUserName(), _T("d:\\test.exe"));
-——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+———————————————————————————————————————————————————————
+	
 #include "WinLibFs.h"
 	
 	//获取文件大小
@@ -144,7 +147,8 @@ Windows Api 封装 C++ 库
 	//	char Buf2[4];
 	//	::RtlCopyMemory(Buf2, pBuf, 4);
 	//}
-——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+———————————————————————————————————————————————————————
+	
 #include "WinLibNet.h"
 	
 	//Ip获取
@@ -179,7 +183,8 @@ Windows Api 封装 C++ 库
 	//获取网络适配器信息
 	std::vector<WinLib::ADAPTER_INFO> Adapters;
 	WinLib::NetGetAdapterInfos(Adapters);
-——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+———————————————————————————————————————————————————————
+	
 #include "WinLibStr.h"
 	
 	//wchar 转 std::string 
@@ -285,7 +290,8 @@ Windows Api 封装 C++ 库
 	//"C:\Windows\explore.exe" -> "\Device\HarddiskVolume2\Windows\explore.exe"
 	tcout << WinLib::StrDosToNtPath(_T("C:\\Windows\\explore.exe")) << std::endl;
 	tcout << WinLib::StrNtToDosPath(_T("\\Device\\HarddiskVolume2\\Windows\\explore.exe")) << std::endl;
-——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+———————————————————————————————————————————————————————
+	
 #include "WinLibPs.h"
 	
 	//枚举进程Pid
@@ -402,4 +408,3 @@ Windows Api 封装 C++ 库
 	//PsCreateRemoteThread32(DWORD Pid, ULONG StartAddress, ULONG Parameter, DWORD CreationFlags = 0);
 	//PsReadProcessMemory32(DWORD Pid, ULONG Address, PVOID Buffer, ULONG Size, PULONG BytesRead);
 	//PsWriteProcessMemory32(DWORD pid, ULONG addr, PVOID buff, ULONG size, SIZE_T* writelen);
-——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
