@@ -164,7 +164,8 @@ Windows Api 封装 C++ 库
 #include "WinLibNet.h"
 	
 	//Ip获取
-	tcout << _T("GetHostByName:") << WinLib::NetIpToStr(WinLib::NetGetHostByName("www.baidu.com")) << std::endl;
+	tcout << _T("GetHostByName:") << WinLib::NetIpToStr(WinLib::NetGetHostByName("www.baidu.com")) 
+	<< std::endl;
 
 	//Dns查询
 	std::map<ULONG, tstring> DnsInfo;
