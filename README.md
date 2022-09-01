@@ -193,8 +193,9 @@ Windows Api 封装 C++ 库
 	//获取网络适配器信息
 	std::vector<WinLib::ADAPTER_INFO> Adapters;
 	WinLib::NetGetAdapterInfos(Adapters);
-———————————————————————————————————————————————————————
 	
+———————————————————————————————————————————————————————
+
 #include "WinLibStr.h"
 	
 	//wchar 转 std::string 
