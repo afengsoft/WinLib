@@ -200,7 +200,7 @@ Windows Api 封装 C++ 库
 	
 
 #include "WinLibStr.h"
-	
+
 	//wchar 转 std::string 
 	{
 		wchar_t* xxx = (wchar_t*)L"xxx";
@@ -304,7 +304,6 @@ Windows Api 封装 C++ 库
 	//"C:\Windows\explore.exe" -> "\Device\HarddiskVolume2\Windows\explore.exe"
 	tcout << WinLib::StrDosToNtPath(_T("C:\\Windows\\explore.exe")) << std::endl;
 	tcout << WinLib::StrNtToDosPath(_T("\\Device\\HarddiskVolume2\\Windows\\explore.exe")) << std::endl;
-
 
 ———————————————————————————————————————————————
 	
