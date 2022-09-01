@@ -157,6 +157,8 @@ Windows Api 封装 C++ 库
 	//	char Buf2[4];
 	//	::RtlCopyMemory(Buf2, pBuf, 4);
 	//}
+
+
 ———————————————————————————————————————————————
 	
 #include "WinLibNet.h"
@@ -301,6 +303,8 @@ Windows Api 封装 C++ 库
 	//"C:\Windows\explore.exe" -> "\Device\HarddiskVolume2\Windows\explore.exe"
 	tcout << WinLib::StrDosToNtPath(_T("C:\\Windows\\explore.exe")) << std::endl;
 	tcout << WinLib::StrNtToDosPath(_T("\\Device\\HarddiskVolume2\\Windows\\explore.exe")) << std::endl;
+
+
 ———————————————————————————————————————————————
 	
 #include "WinLibPs.h"
